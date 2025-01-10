@@ -105,10 +105,10 @@ AND
 
 OWNERSHIP STRUCTURE
 The Client's ownership structure is as follows:
-• Bahraini Ownership: {data['bahraini_ownership']}%
-• GCC Nationals: {data['gcc_ownership']}%
-• American Nationals: {data['american_ownership']}%
-• Foreign Ownership: {data['foreign_ownership']}%
+- Bahraini Ownership: {data['bahraini_ownership']}%
+- GCC Nationals: {data['gcc_ownership']}%
+- American Nationals: {data['american_ownership']}%
+- Foreign Ownership: {data['foreign_ownership']}%
 
 BUSINESS ACTIVITIES
 The Client is engaged in the following business activities:
@@ -128,21 +128,21 @@ The Service Provider agrees to provide the following services to the Client:
 
 FEES AND PAYMENT STRUCTURE
 1. Registration and Setup Costs:
-   • Company Formation: BHD {data['company_formation_cost']:.3f}
-   • Desk-Space Office Rental: BHD {data['desk_space_cost']:.3f}
-   • Businessman Visa: BHD {data['businessman_visa_cost']:.3f}
-   • Power of Attorney: BHD {data['poa_cost']:.3f}
+   - Company Formation: BHD {data['company_formation_cost']:.3f}
+   - Desk-Space Office Rental: BHD {data['desk_space_cost']:.3f}
+   - Businessman Visa: BHD {data['businessman_visa_cost']:.3f}
+   - Power of Attorney: BHD {data['poa_cost']:.3f}
 
 2. Administrative Costs:
-   • Labour Authority Registration: BHD {data['labor_auth_cost']:.3f}
-   • Social Insurance Registration: BHD {data['social_insurance_cost']:.3f}
-   • Miscellaneous/Admin Charges: BHD {data['misc_charges']:.3f}
-   • Estimation Charges (Per Head): BHD {data['estimation_charges']:.3f}
-   • Free Advice/Guidance: BHD {data['free_advice_cost']:.3f}
+   - Labour Authority Registration: BHD {data['labor_auth_cost']:.3f}
+   - Social Insurance Registration: BHD {data['social_insurance_cost']:.3f}
+   - Miscellaneous/Admin Charges: BHD {data['misc_charges']:.3f}
+   - Estimation Charges (Per Head): BHD {data['estimation_charges']:.3f}
+   - Free Advice/Guidance: BHD {data['free_advice_cost']:.3f}
 
 3. VAT Services:
-   • VAT Registration Fee: BHD {data['vat_registration_fee']:.3f}
-   • Consultancy Fee: BHD {data['consultancy_fee']:.3f}
+   - VAT Registration Fee: BHD {data['vat_registration_fee']:.3f}
+   - Consultancy Fee: BHD {data['consultancy_fee']:.3f}
    Total VAT Services Fee: BHD {(data['vat_registration_fee'] + data['consultancy_fee']):.3f}
 
 PAYMENT TERMS
