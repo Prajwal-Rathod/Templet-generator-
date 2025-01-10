@@ -32,7 +32,7 @@ class SLATemplate(FPDF):
             self.image('logo.png', x=25, y=10, w=30)
         
         # Title (center) with increased spacing
-        self.set_font('Calibri', 'B', 14)
+        self.set_font('Arial', 'B', 14)
         self.set_text_color(0, 51, 102)
         self.cell(0, 12, 'SERVICE LEVEL AGREEMENT', 0, 1, 'C')
         
@@ -45,7 +45,7 @@ class SLATemplate(FPDF):
     def footer(self):
         # Move footer text to the very bottom of the page
         self.set_y(-15)  # -15 is the absolute bottom position
-        self.set_font('Calibri', 'I', 8)
+        self.set_font('Arial', 'I', 8)
         self.set_text_color(0, 51, 102)
         self.cell(0, 10, 'B.K.R Support Services W.L.L', 0, 0, 'C')
         self.set_text_color(0, 0, 0)
@@ -69,24 +69,24 @@ class DocumentGenerator:
             pdf = SLATemplate()
             
             try:
-                pdf.add_font('Calibri', '', 'calibri.ttf', uni=True)
-                pdf.add_font('Calibri', 'B', 'calibrib.ttf', uni=True)
-                pdf.add_font('Calibri', 'I', 'calibrii.ttf', uni=True)
+                pdf.add_font('Arial', '', 'arial.ttf', uni=True)
+                pdf.add_font('Arial', 'B', 'arialbd.ttf', uni=True)
+                pdf.add_font('Arial', 'I', 'ariali.ttf', uni=True)
             except Exception as e:
-                print(f"Warning: Could not load Calibri fonts, falling back to Arial: {str(e)}")
+                print(f"Warning: Could not load Arial fonts, falling back to default: {str(e)}")
                 pdf.set_font('Arial', '', 10)
             
             pdf.add_page()
 
             # Header Information
-            pdf.set_font('Calibri', 'B', 12)
+            pdf.set_font('Arial', 'B', 12)
             pdf.cell(0, 8, f"Ref: {data['ref_number']}", ln=True)
             pdf.cell(0, 8, f"Date: {data['current_date']}", ln=True)
             pdf.ln(5)
 
             # Client Details
             pdf.cell(0, 8, "TO:", ln=True)
-            pdf.set_font('Calibri', '', 10)
+            pdf.set_font('Arial', '', 10)
             pdf.cell(0, 6, data['client_name'], ln=True)
             pdf.cell(0, 6, f"CR No: {data['commercial_registration_number']}", ln=True)
             pdf.cell(0, 6, f"Attn: {data['attention']}", ln=True)
@@ -160,7 +160,7 @@ This Agreement shall commence on {data['agreement_date']} and shall continue unt
 """
 
             # Add the template text to PDF
-            pdf.set_font('Calibri', '', 10)
+            pdf.set_font('Arial', '', 10)
             pdf.multi_cell(0, 6, template_text)
             
             # Signature Section
