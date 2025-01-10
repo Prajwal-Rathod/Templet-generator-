@@ -1,2 +1,3 @@
 streamlit==1.29.0
-fpdf2==2.7.6
+fpdf==1.7.2
+python-dateutil==2.8.2
